@@ -8,10 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
 	<section id="banner">
-		<img src="images/logo.png" class="logo">	
+		<img src="images/logo.png" class="logo" >	
     <div class="banner-text">
         <h1>Hair Studio</h1>
         <p>Style Your Hair Is Style Your Life</p>
@@ -27,11 +28,11 @@
     <div id="sideNav">
         <nav>
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">FEATURES</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">TESTIMONIALS</a></li>
-            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#feature">FEATURES</a></li>
+            <li><a href="#service">SERVICES</a></li>
+            <li><a href="#testimonial">TESTIMONIALS</a></li>
+            <li><a href="#footer">CONTACT US</a></li>
         </ul>
         </nav>
     </div>
@@ -133,12 +134,75 @@
         </div>
     </section>
     
+    <!--Testimonial-->
+    <section id="testimonial">
+        <div class="title-text">
+            <p>TESTIMONIAL</p>
+            <h1>What Client Says</h1>
+        </div>
+        <div class="testimonial-row">
+            <div class="testimonial-col">
+            <div class="user">
+            <img src="images/img-1.jpg">
+            <div class="user-info">
+            <h4>KEN SEBASTAN</h4> 
+            <small>@kenstan  <i class="fa fa-twitter" ></i></small>
+            </div>
+            </div>
+            <p>Have you ever searched for step-by-step instructions on how to delete a Google review? If you read a negative review of your business and feel your stomach churn, you are not alone. On the flip side, when a customer gushes over your company publicly, are you liable to do your happy dance?</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+            <img src="images/img-2.jpg">
+            <div class="user-info">
+            <h4>AMMY WATSON</h4> 
+            <small>@am_watson  <i class="fa fa-twitter" ></i></small>
+            </div>
+            </div>
+                <p>In this article, we provide you with examples of good reviews and what they can teach us.  We also equip you with the know-how to set the tone of future reviews.</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+            <img src="images/img-3.jpg">
+            <div class="user-info">
+            <h4>PETER BROWN</h4> 
+            <small>@peter21  <i class="fa fa-twitter" ></i></small>
+            </div>
+            </div>
+            <p>Which review is likely to influence someone with an intense pizza craving? A five-star rating and “good pizza” is not bad, but it doesn’t have the same impact. A review doesn’t have to be the length of War and Peace, but an honest, detailed, and specific recollection goes a long way to building credibility.</p>
+            </div>
+        </div>  
+    </section>
     
-    
-    
-    
-    
-    
+    <!--Footer-->
+    <section id="footer">
+        <img src="images/footer-img.png" class="footer-img">
+        <div class="title-text">
+            <p>CONTACT US</p>
+            <h1>Visit Shop Today</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+            <h1>Opening Hours</h1>
+                <p><i class="fa fa-clock-o" ></i>Monday to Friday - 9am to 9pm</p>
+                <p><i class="fa fa-clock-o" ></i>Saturday and Sunday - 8am to 5pm</p>
+            </div>
+            <div class="footer-right">
+            <h1>Get In Touch</h1>
+            <p>30/A Lord Colony,Bermuda<i class="fa fa-map-marker" ></i></p> <p>barber231@hairstudio.com<i class="fa fa-paper-plane" ></i></p>
+            <p>+22 5681-8465<i class="fa fa-phone" ></i></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-facebook" ></i>
+            <i class="fa fa-instagram" ></i>
+            <i class="fa fa-twitter" ></i>
+            <i class="fa fa-youtube" ></i>
+            <p>Copyright Easy Tutorials Youtube Channel</p>
+        </div>
+        
+        
+    </section>
     
     
     <script>
@@ -159,6 +223,11 @@
             menu.src = "images/menu.png";
         }
     }
+    
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
     
     </script>
 
